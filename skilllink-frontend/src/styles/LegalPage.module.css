@@ -1,0 +1,83 @@
+/* src/styles/LegalPage.module.css */
+.pageContainer {
+    max-width: 800px; /* Ancho óptimo para lectura de texto largo */
+    margin: 40px auto; /* Centrado y con margen superior/inferior */
+    padding: 20px 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+    line-height: 1.8; /* Buena interlínea para legibilidad */
+    color: #333; /* Color de texto principal */
+}
+
+.pageTitle {
+    text-align: center;
+    font-size: 2.75rem;
+    font-weight: 800;
+    background: linear-gradient(to right, #6366f1, #3b82f6);
+    -webkit-background-clip: text;
+    color: transparent; 
+    margin-bottom: 2rem;
+    text-decoration: none;
+}
+
+.lastUpdated {
+    display: block;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #6c757d; /* Gris para la fecha */
+    margin-bottom: 40px;
+    font-style: italic;
+}
+
+.section {
+    margin-bottom: 35px;
+}
+
+.sectionTitle {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #0056b3; /* Un azul más oscuro para subtítulos */
+    margin-top: 30px; /* Espacio antes del título de sección */
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #e0e0e0; /* Separador ligero */
+}
+
+.section p {
+    margin-bottom: 15px;
+    text-align: justify; /* Justificar texto legal puede ser una opción */
+}
+
+.section ul,
+.section ol {
+    margin-left: 20px; /* Indentación para listas */
+    margin-bottom: 15px;
+    padding-left: 20px; /* Espacio para los bullets/números */
+}
+
+.section li {
+    margin-bottom: 8px;
+    text-decoration: none;
+}
+
+.section a {
+    color: #007bff; /* Color primario para enlaces */
+    text-decoration: none; /* Subrayar enlaces en texto legal para claridad */
+}
+
+.section a:hover {
+    color: #0056b3;
+}
+
+.contactInfo {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f8f9fa; /* Fondo ligero para la sección de contacto */
+    border-left: 4px solid #007bff;
+    border-radius: 4px;
+}
+
+.contactInfo p {
+    margin-bottom: 5px;
+}

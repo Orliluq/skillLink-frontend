@@ -1,0 +1,137 @@
+/* MentorshipDetailPage.module.css */
+
+.container {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: 'Inter', sans-serif;
+}
+
+.title {
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: 800;
+  margin-bottom: 2rem;
+  background: linear-gradient(to right, #6366f1, #3b82f6);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 1rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1.5rem;
+  border: 1px solid #e5e7eb;
+}
+
+.cardTitle {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.cardSpecialty,
+.cardBio {
+  font-size: 1rem;
+  color: #4b5563;
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+.cardSpecialty strong,
+.cardBio strong {
+  color: #111827;
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #3b82f6;
+  box-shadow: 0 0 0 4px #e0e7ff;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.6rem 2rem;
+  border-radius: 9999px;
+  background-image: linear-gradient(to right, #6366f1, #3b82f6);
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 0.95rem;
+  text-decoration: none;
+  text-align: center;
+  transition: background 0.3s ease, transform 0.2s ease;
+  margin-top: auto;
+}
+
+.button:hover {
+  background-image: linear-gradient(to right, #4f46e5, #2563eb);
+  transform: scale(1.05);
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+.primaryButton,
+.linkButton {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  font-size: 1rem;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  width: 100%;
+  max-width: 300px;
+  text-decoration: none;
+}
+
+.primaryButton {
+  background-image: linear-gradient(to right, #6366f1, #3b82f6);
+  color: #ffffff;
+  border: none;
+}
+
+.primaryButton:hover {
+  background-image: linear-gradient(to right, #4f46e5, #2563eb);
+  transform: translateY(-2px) scale(1.02);
+}
+
+.linkButton {
+  background-color: #f3f4f6;
+  color: #3b82f6;
+  border: 2px solid #3b82f6;
+}
+
+.linkButton:hover {
+  background-color: #e0e7ff;
+  color: #1e3a8a;
+  transform: translateY(-2px) scale(1.02);
+}
+
+
+.message {
+  text-align: center;
+  font-size: 1rem;
+  color: #6b7280;
+}
+
+.error {
+  color: red;
+  text-align: center;
+  font-weight: 600;
+}

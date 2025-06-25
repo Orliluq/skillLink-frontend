@@ -1,0 +1,153 @@
+.home-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+}
+
+.hero-section {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #007bff; /* Un azul primario */
+    color: white;
+    width: 100%;
+    text-decoration: none;
+}
+
+.hero-section h1 {
+    font-size: 2.8em;
+    margin-bottom: 20px;
+    text-decoration: none;  
+}
+
+.hero-section p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    text-decoration: none;
+}
+
+/* Contenedor para el botón CTA debajo del slider */
+.belowSliderCtaContainer {
+    text-align: center;
+    padding: 40px 20px; /* Espaciado arriba y abajo */
+    background-color: #f8f9fa; /* Un fondo sutil si quieres diferenciarlo */
+}
+
+/* Estilo para el botón CTA (similar al del HeroSlider, puedes unificar si quieres) */
+.ctaButton {
+    display: inline-block; /* Importante para padding y centrado */
+    background: linear-gradient(135deg, #ffc107 0%, #ff8c00 100%); /* Gradiente naranja/amarillo */
+    color: #333; /* Texto oscuro para contraste */
+    padding: 15px 35px;
+    text-decoration: none;
+    font-size: 1.15rem;
+    font-weight: bold;
+    border-radius: 50px; /* Píldora */
+    transition: transform 0.2s ease-out, box-shadow 0.2s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    border: none;
+}
+
+.ctaButton:hover {
+    transform: translateY(-3px) scale(1.03);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+
+/* Sección de Features */
+.featuresSection {
+    padding: 60px 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto; /* Centrar la sección */
+    background-color: #fff; /* Fondo blanco si el general es diferente */
+}
+
+.sectionHeading { /* Clase más genérica para títulos de sección */
+    font-size: 2.5rem; /* Tamaño consistente */
+    font-weight: 600;
+    margin-bottom: 50px;
+    color: #343a40;
+    position: relative;
+    display: inline-block;
+}
+.sectionHeading::after { /* Subrayado decorativo */
+    content: '';
+    display: block;
+    width: 70px;
+    height: 3px;
+    background-color: #007bff; /* Color primario */
+    margin: 10px auto 0; /* Centrado debajo del título */
+}
+
+
+.featuresGrid {
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));  Antes */
+    grid-template-columns: repeat(3, 1fr); /* Siempre 3 columnas en desktop */
+    gap: 30px;
+}
+
+.featureCard { /* Renombrado de .featureItem y mejorado */
+    background-color: #ffffff;
+    border-radius: 12px; /* Bordes más redondeados */
+    padding: 30px;
+    text-align: left; /* Alinear texto a la izquierda dentro de la tarjeta */
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column; /* Para alinear el contenido verticalmente */
+    border: 1px solid #e9ecef; /* Borde sutil */
+}
+
+.featureCard:hover {
+    transform: translateY(-8px); /* Efecto de elevación más pronunciado */
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+}
+
+.featureIcon { /* Estilo para iconos si los añades */
+    font-size: 2.5rem;
+    color: #007bff;
+    margin-bottom: 20px;
+    /* Centrar el icono si el texto de la tarjeta está centrado */
+    /* display: block; */
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+}
+
+.cardTitle { /* Renombrado de .featureItem h3 */
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #2c3e50; /* Un color de título más oscuro */
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.cardText { /* Renombrado de .featureItem p */
+    font-size: 0.95rem;
+    color: #5a6268; /* Un gris más suave */
+    line-height: 1.7;
+    flex-grow: 1; /* Para que los párrafos ocupen el espacio y las tarjetas tengan alturas similares */
+}
+
+/* Responsividad para las featuresGrid */
+@media (max-width: 992px) {
+    .featuresGrid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas en tablets */
+    }
+}
+
+@media (max-width: 600px) {
+    .featuresGrid {
+        grid-template-columns: 1fr; /* 1 columna en móviles */
+    }
+    .sectionHeading {
+        font-size: 2rem;
+    }
+    .featureCard {
+        padding: 25px;
+    }
+    .cardTitle {
+        font-size: 1.3rem;
+    }
+}

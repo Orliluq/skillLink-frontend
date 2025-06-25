@@ -1,0 +1,156 @@
+/* src/pages/PublicProjectsPage.module.css */
+
+/* Contenedor principal */
+.container {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Título de la página */
+.title {
+  text-align: center;
+  font-size: 2.75rem;
+  font-weight: 800;
+  background: linear-gradient(to right, #6366f1, #3b82f6);
+  -webkit-background-clip: text;
+  color: transparent; 
+  margin-bottom: 2rem;
+  text-decoration: none;
+}
+
+/* Lista de proyectos */
+.projectsList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 16px;
+}
+
+/* Tarjeta de cada proyecto */
+.projectCard {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+  overflow: hidden; /* Para evitar que el contenido se salga de la tarjeta */
+  position: relative; /* Necesario para la imagen de fondo */
+}
+
+/* Efecto hover para las tarjetas */
+.projectCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
+}
+
+/* Imagen dentro de la tarjeta (ajustada al contenedor de la tarjeta) */
+.projectCardImage {
+  width: 100%;
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 8px 8px 0 0;
+  margin: -16px -16px 1rem -16px; /* Para alinear la imagen con el borde de la tarjeta */
+}
+
+/* Título dentro de la tarjeta */
+.projectCardTitle {
+  font-size: 1.25rem;
+  margin-bottom: 8px;
+  color: #007bff;
+  font-weight: 600;
+}
+.projectCardTitle a {
+  text-decoration: none;
+  color: inherit;
+}
+.projectCardTitle a:hover {
+  text-decoration: none;
+}
+
+/* Descripción breve */
+.projectCardDesc {
+  color: #555;
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+
+/* Información adicional (estado, creador, etc.) */
+.projectCardInfo {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 4px;
+}
+
+/* Fecha creada */
+.projectCardSmall {
+  font-size: 0.8rem;
+  color: #999;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2.5rem;
+}
+
+.paginationButton {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1.4rem;
+  background: linear-gradient(to right, #e0e7ff, #f3f4f6);
+  border: 1px solid #d1d5db;
+  border-radius: 9999px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #1f2937;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.paginationButton:disabled {
+  background: #f3f4f6;
+  color: #9ca3af;
+  border-color: #e5e7eb;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.paginationButton:not(:disabled):hover {
+  background: linear-gradient(to right, #c7d2fe, #e5e7eb);
+  transform: scale(1.04);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+}
+
+.paginationInfo {
+  font-size: 1rem;
+  color: #374151;
+  font-weight: 500;
+}
+
+
+/* Mensajes de carga o error */
+.message {
+  color: #666;
+  text-align: center;
+}
+.error {
+  color: red;
+  text-align: center;
+}
+
+/* Responsive básico */
+@media (max-width: 600px) {
+  .projectCard {
+    padding: 12px;
+  }
+  .title {
+    font-size: 1.5rem;
+  }
+}

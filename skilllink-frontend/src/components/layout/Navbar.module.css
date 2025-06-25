@@ -1,0 +1,280 @@
+/* src/components/layout/Navbar.module.css */
+.navbar {
+    background-color: rgba(255, 255, 255, 0.95); /* Fondo blanco ligeramente translúcido */
+    backdrop-filter: blur(8px); /* Efecto de desenfoque para navegadores que lo soportan */
+    -webkit-backdrop-filter: blur(8px); /* Para Safari */
+    padding: 0 40px;
+    height: 75px; /* Un poco más de altura */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.03); /* Sombra más suave y multicapa */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+    /* border-bottom: 1px solid #f0f0f0; /* Borde inferior muy sutil o quitarlo si la sombra es suficiente */
+}
+
+.logo {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+    display: block;
+}
+
+.navBrand a {
+    font-size: 1.5rem; /* Ligeramente más grande */
+    font-weight: 600;
+    background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+    letter-spacing: -0.5px; /* Ajuste de espaciado */
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+    gap: 12px; /* Espacio entre logo y texto */
+}
+
+.navBrand a:hover {
+    opacity: 0.8;
+}
+
+.navLinks {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.navLinks li {
+    margin-left: 28px; /* Más espacio */
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.navLinkItem, .loginButton, .registerButton {
+    text-decoration: none;
+    color: #333; /* Texto principal más oscuro */
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 0 5px; /* Padding horizontal solo para el área de clic */
+    margin: 0 10px; /* Margen para separar visualmente */
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    height: 100%;
+    box-sizing: border-box;
+    transition: color 0.25s ease;
+}
+
+/* Efecto de subrayado animado en hover/activo */
+.navLinkItem::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 18px; /* Ajusta para que quede debajo del texto */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #007bff;
+    transition: width 0.3s ease-in-out;
+}
+
+.navLinkItem:hover::after,
+.navLinkItem.active::after {
+    width: 100%; /* Anima el ancho del subrayado */
+}
+
+.navLinkItem:hover {
+    color: #007bff;
+}
+
+.navLinkItem.active {
+    color: #007bff;
+    font-weight: 600;
+    /* El borde inferior ahora es manejado por el pseudo-elemento ::after */
+}
+
+.profileMenuContainer {
+    position: relative;
+  }
+  
+  .profileButton {
+    display: flex;
+    align-items: center;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+    gap: 0.5rem;
+  }
+  
+  .avatarSmall {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-image: url('https://i.ibb.co/hFzRySjS/1744756637461-removebg-preview.png');
+  }
+  
+  .profileIcon {
+    font-size: 1.5rem;
+  }
+  
+  .profileDropdown {
+    position: absolute;
+    top: 110%;
+    right: 0;
+    border-radius: 0.5rem;
+    min-width: 180px;
+    z-index: 99;
+    padding: 0.5rem 0;
+  }
+  
+  .profileDropdown li {
+    padding: 0.75rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .logoutAction {
+    background: none;
+    border: none;
+    color: #f87171;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+
+.avatarSmall {
+    width: 36px; /* Ligeramente más grande */
+    height: 36px;
+    border-radius: 50%;
+    margin-right: 10px;
+    object-fit: cover;
+    border: 2px solid #007bff; /* Borde con color primario */
+}
+
+.profileIcon {
+    font-size: 2rem; /* Ligeramente más grande */
+    margin-right: 10px;
+    color: #555;
+}
+
+.profileButton span { /* Estilo para el nombre de usuario en el botón */
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+
+.profileDropdown {
+    position: absolute;
+    top: calc(100% + 10px); /* Un poco más de espacio desde el botón */
+    right: 0;
+    background-color: white;
+    border-radius: 10px; /* Bordes más redondeados */
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 8px 0; /* Padding vertical */
+    margin: 0;
+    min-width: 200px;
+    z-index: 1010;
+    border: 1px solid #e9ecef;
+    opacity: 0; /* Para animación */
+    visibility: hidden; /* Para animación */
+    transform: translateY(10px); /* Para animación */
+    transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s ease;
+}
+
+.profileMenuContainer:hover .profileDropdown, /* Mostrar al hacer hover en el contenedor */
+.profileButton:focus + .profileDropdown, /* Mostrar si el botón tiene foco (accesibilidad) */
+.profileDropdown:hover /* Mantener visible si el ratón está sobre el dropdown */
+{
+    opacity: 1;
+    visibility: visible;
+    
+}
+/* Si controlas la visibilidad con estado de React (isProfileDropdownOpen), estas reglas :hover no son necesarias
+   y en su lugar tendrías una clase como .dropdownOpen que cambie opacity, visibility y transform.
+   Si usas estado, el useEffect para clic fuera es la mejor forma de cerrarlo.
+*/
+
+
+.profileDropdown li a, .profileDropdown li button {
+    display: flex; /* Para alinear iconos y texto en el dropdown */
+    align-items: center;
+    gap: 10px;
+    padding: 12px 20px;
+    text-decoration: none;
+    color: #495057;
+    font-size: 0.95rem;
+    background: none;
+    border: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease;
+    box-sizing: border-box; /* Importante si hay padding */
+}
+
+.profileDropdown li a:hover, .profileDropdown li button:hover {
+    color: rgb(57, 89, 231);
+}
+
+.logoutAction {
+    color: #dc3545 !important;
+}
+.logoutAction:hover {
+     background-color: #dc3545 !important;
+     color: white !important; /* Mantener blanco para el icono */
+}
+
+
+/* Estilos para los botones de Login/Register */
+.authLinkItem {
+    /* Para espaciar los botones */
+}
+
+/* Menú Hamburguesa (igual que antes, pero revisa colores si es necesario) */
+.mobileMenuIcon {
+    display: none;
+    font-size: 1.8rem;
+    color: #333;
+    cursor: pointer;
+}
+
+@media (max-width: 880px) {
+    /* ... (tus estilos responsivos anteriores pueden necesitar ajustes menores
+             para padding, tamaños de fuente si el navbar es más alto, etc.) ... */
+    .navbar {
+        padding: 0 20px; /* Menos padding en móvil */
+    }
+
+    .navLinks {
+        /* ... (como antes) ... */
+        top: 75px; /* Ajustar al nuevo height del navbar */
+    }
+
+    .navLinkItem::after { /* Ocultar el subrayado animado en móvil o simplificarlo */
+        display: none;
+    }
+    .navLinkItem.active {
+        border-bottom: none; /* Quitar el borde, el fondo ya indica actividad */
+        background-color: rgba(0, 123, 255, 0.08);
+    }
+     .profileDropdown { /* Ajustar dropdown para móvil */
+        /* ... (como antes, pero verifica que se vea bien con los cambios del navbar) ... */
+        border-top: 1px solid #f0f0f0;
+     }
+}

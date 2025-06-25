@@ -1,0 +1,82 @@
+.card {
+    background-color: #ffffff;
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .card:hover {
+    transform: translateY(-4px);
+  }
+  
+  .read {
+    background-color: #f1f5f9; /* Fondo claro para las leídas */
+  }
+  
+  .unread {
+    background-color: #eef2f7; /* Fondo ligeramente azul para las no leídas */
+  }
+  
+  .cardHeader {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 1rem;
+  }
+  
+  .systemIcon {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+  }
+  
+  .headerText {
+    flex-grow: 1;
+  }
+  
+  .timestamp {
+    font-size: 0.85rem;
+    color: #777;
+    margin-left: 1rem;
+    margin-right: 0;
+  }
+  
+  .content {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .link {
+    display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  transition: background 0.3s ease, transform 0.2s ease;
+  margin-top: auto;
+  padding: 0.85rem 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 0.75rem;
+    border: none;
+    background: linear-gradient(to right, #6366f1, #3b82f6);
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 4px 14px rgba(99, 102, 241, 0.4);
+
+  }
+  
+  .link:hover {
+    transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(99, 102, 241, 0.6);
+  }
+  

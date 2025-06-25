@@ -1,0 +1,125 @@
+/* src/pages/RegisterPage.module.css */
+/* Importar o duplicar estilos comunes si no quieres crear un archivo CSS común */
+/* Por ejemplo, podrías tener un forms.module.css y usar composición */
+
+.pageContainer {
+    display: flex;
+    font-family: 'Inter', sans-serif;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 140px);
+    padding: 20px;
+    background: linear-gradient(120deg, #f6d365 0%, #fda085 100%); /* Un gradiente diferente para registro */
+}
+
+.formContainer {
+    background-color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 480px; /* Un poco más ancho para más campos */
+    text-align: center;
+}
+
+.formContainer h2 {
+    margin-bottom: 25px;
+    color: #333;
+    font-size: 2rem;
+    font-weight: 800;
+    background: linear-gradient(to right, #6366f1, #3b82f6);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.formGroup {
+    margin-bottom: 18px; /* Ligeramente menos margen para más campos */
+    text-align: left;
+}
+
+.formGroup label {
+    display: block;
+    margin-bottom: 7px;
+    color: #555;
+    font-weight: 500;
+    font-size: 0.85rem;
+}
+
+.formInput {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.formInput:focus {
+    border-color: #fda085; /* Color de acento del gradiente */
+    box-shadow: 0 0 0 0.2rem rgba(253, 160, 133, 0.3);
+    outline: none;
+}
+
+.submitButton {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(to right, #6366f1, #3b82f6);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 4px 14px rgba(99, 102, 241, 0.4);
+    margin-top: 10px;
+}
+
+.submitButton:hover:not(:disabled) {
+    opacity: 0.9;
+    transform: translateY(-1px);
+}
+
+.submitButton:disabled {
+    background: #bdc3c7;
+    cursor: not-allowed;
+}
+
+.message {
+    padding: 12px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.errorMessage {
+    color: #721c24;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+}
+
+.successMessage {
+    color: #155724;
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+}
+
+.switchFormLink {
+    margin-top: 25px;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.switchFormLink a {
+    color: #e74c3c; 
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.switchFormLink a:hover {
+    text-decoration: none;
+    color: #aa8e8b;
+}
