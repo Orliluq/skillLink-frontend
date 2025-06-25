@@ -1,0 +1,113 @@
+/* src/pages/LoginPage.module.css */
+.pageContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 140px); /* Restar altura de navbar y footer aprox. */
+    padding: 20px;
+    background-color: #f4f7f6; /* Un fondo muy sutil */
+    font-family: 'Inter', sans-serif;
+}
+
+.formContainer {
+    background-color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 420px;
+    text-align: center;
+}
+
+.formContainer h2 {
+    margin-bottom: 25px;
+    color: #333;
+    font-size: 2rem;
+    font-weight: 800;
+    background: linear-gradient(to right, #6366f1, #3b82f6);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.formGroup {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.formGroup label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.formInput {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.formInput:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    outline: none;
+}
+
+.submitButton {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(to right, #6366f1, #3b82f6);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 4px 14px rgba(99, 102, 241, 0.4);
+    margin-top: 10px; /* Espacio antes del botón */
+}
+
+.submitButton:hover:not(:disabled) {
+    background-image: linear-gradient(to right, #4f46e5, #2563eb);
+    transform: translateY(-1px);
+}
+
+/* .submitButton:disabled {
+    background-color: #adb5bd;
+    cursor: not-allowed;
+} */
+
+.errorMessage {
+    color: #dc3545; /* Rojo para errores */
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.switchFormLink {
+    margin-top: 25px;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.switchFormLink a {
+    color: #007bff;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.switchFormLink a:hover {
+    text-decoration: none;
+    color: #aa8e8b;
+}

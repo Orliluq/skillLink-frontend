@@ -1,0 +1,331 @@
+/* src/pages/BlogPostPage.module.css */
+.pageContainer {
+    margin: 0 auto;
+    padding: 30px 20px 60px; /* Más padding inferior */
+    background-color: #fff;
+    font-family: 'Inter', sans-serif;
+    overflow: hidden;
+}
+
+.loading, .notFound {
+    text-align: center;
+    padding: 60px 20px;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.notFound h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+.notFound p {
+    color: #555;
+    margin-bottom: 25px;
+}
+
+.postHeader {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.postCategory {
+    display: inline-block;
+    background-color: #e9ecef; /* Un gris más sutil para la categoría aquí */
+    color: #007bff;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.postTitle {
+    font-size: clamp(2rem, 5vw, 3rem);
+    color: #2c3e50;
+    margin: 0 0 10px 0;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.postMeta {
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+.postMeta span {
+    margin: 0 8px;
+}
+
+.featuredImage {
+    width: 100%;
+    max-height: 450px; /* Limita la altura de la imagen destacada */
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 35px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.postContent {
+    font-size: 1.05rem; /* Ligeramente más grande para lectura */
+    line-height: 1.9; /* Más interlínea */
+    color: #343a40;
+}
+
+/* Estilos para elementos dentro de dangerouslySetInnerHTML o ReactMarkdown */
+/* Estos estilos se aplicarán a los h2, h3, p, ul, li, etc., dentro de .postContent */
+.postContent h2 { /* Ya usado por el título de sección de LegalPage.module.css si lo compones */
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #333;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #e0e0e0;
+}
+.postContent h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #444;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.postContent p {
+    margin-bottom: 20px;
+    /* text-align: justify; Si quieres justificar el contenido del post */
+}
+.postContent ul, .postContent ol {
+    margin-bottom: 20px;
+    padding-left: 25px; /* Más indentación */
+}
+.postContent li {
+    margin-bottom: 8px;
+}
+.postContent a {
+    color: #0069d9; /* Un azul ligeramente diferente para enlaces en el contenido */
+    text-decoration: underline;
+}
+.postContent a:hover {
+    color: #004085;
+}
+.postContent img { /* Para imágenes dentro del contenido del post */
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 20px 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+.tagsSection {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+.tagsSection strong {
+    margin-right: 10px;
+    color: #333;
+}
+.tag {
+    display: inline-block;
+    background-color: #e9ecef;
+    color: #495057;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+.tag:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+
+.backLinkContainer {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.backButton, .notFound a { /* Estilo común para botones de "volver" */
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: #6c757d; /* Gris */
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+.backButton:hover, .notFound a:hover {
+    background-color: #5a6268;
+    transform: translateY(-1px);
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+    margin-bottom: 2rem;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.08);
+  }
+  
+  .markdownCard {
+    overflow-wrap: break-word;
+  }
+  
+  /* Markdown Element Styles */
+  .markdown-paragraph {
+    font-size: 1.05rem;
+    line-height: 1.9;
+    margin-bottom: 1.25rem;
+    color: #343a40;
+  }
+  
+  .markdown-heading {
+    color: #2c3e50;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 0.3rem;
+  }
+  
+  .markdown-link {
+    color: #0069d9; 
+    text-decoration: none;
+  }
+  .markdown-link:hover {
+    color: #004085;
+  }
+  
+  /* Código */
+  .inline-code {
+    background-color: #f1f3f5;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: 'Fira Code', monospace;
+    font-size: 0.95rem;
+    color: #d6336c;
+  }
+  
+  .code-block {
+    background-color: #1e1e1e;
+    color: #f8f8f2;
+    padding: 1rem;
+    border-radius: 8px;
+    margin: 1.5rem 0;
+    font-family: 'Fira Code', monospace;
+    font-size: 0.95rem;
+  }
+  
+  /* Responsive */
+  @media screen and (max-width: 768px) {
+    .card {
+      padding: 1.25rem;
+    }
+  
+    .markdown-paragraph {
+      font-size: 1rem;
+    }
+  
+    .markdown-heading {
+      font-size: 1.25rem;
+    }
+  
+    .code-block {
+      font-size: 0.9rem;
+      padding: 0.75rem;
+    }
+  }
+  
+
+/* Responsivo general */
+@media screen and (max-width: 768px) {
+    .pageContainer {
+      padding: 20px 15px 40px;
+    }
+  
+    .postTitle {
+      font-size: clamp(1.7rem, 6vw, 2.2rem);
+    }
+  
+    .featuredImage {
+      max-height: 300px;
+    }
+  
+    .postContent {
+      font-size: 1rem;
+      line-height: 1.8;
+    }
+  
+    .postContent h2 {
+      font-size: 1.5rem;
+    }
+  
+    .postContent h3 {
+      font-size: 1.25rem;
+    }
+  
+    .postMeta {
+      font-size: 0.85rem;
+      flex-direction: column;
+      gap: 6px;
+    }
+  
+    .tagsSection {
+      text-align: center;
+    }
+  
+    .tag {
+      font-size: 0.75rem;
+      padding: 4px 8px;
+    }
+  
+    .backButton {
+      font-size: 0.85rem;
+      padding: 8px 20px;
+    }
+  }
+  
+  /* Muy pequeño: teléfonos angostos */
+  @media screen and (max-width: 480px) {
+    .postTitle {
+      font-size: 1.5rem;
+    }
+  
+    .postContent {
+      font-size: 0.95rem;
+      line-height: 1.7;
+    }
+  
+    .postContent img {
+      margin: 15px 0;
+      border-radius: 6px;
+    }
+  
+    .postContent ul,
+    .postContent ol {
+      padding-left: 20px;
+    }
+  
+    .notFound h2 {
+      font-size: 1.5rem;
+    }
+  
+    .ctaButton {
+      width: 100%;
+    }
+  }
+  

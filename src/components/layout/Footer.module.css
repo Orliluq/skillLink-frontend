@@ -1,0 +1,144 @@
+/* src/components/layout/Footer.module.css */
+.appFooter {
+    background-color: #2c3e50; /* Un azul oscuro/grisáceo, más corporativo */
+    color: #bdc3c7; /* Texto gris claro para contraste */
+    padding: 50px 0 20px 0; /* Más padding arriba */
+    margin-top: auto;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    text-decoration: none;
+}
+
+.footerContent {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px; /* Ajusta el padding horizontal */
+    text-decoration: none;
+}
+
+.footerGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* Columnas responsivas */
+    gap: 30px; /* Espacio entre secciones */
+    margin-bottom: 40px;
+    text-align: left; /* Alineación a la izquierda para las secciones */
+    text-decoration: none;
+}
+
+.footerSection {
+    /* No necesita estilos específicos si footerGrid maneja el layout */
+    text-decoration: none;
+}
+
+.footerHeading {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #ffffff; /* Encabezados en blanco */
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 8px;    
+    text-decoration: none;
+}
+
+/* Línea sutil debajo de los encabezados del footer */
+.footerHeading::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 40px;
+    height: 2px;
+    background-color: #007bff; /* Color de acento primario */
+}
+
+.footerDescription {
+    color: #abb8c3; /* Un gris un poco más claro para descripciones */
+    margin-bottom: 15px;
+    text-decoration: none;
+}
+
+.footerLogo {
+    max-width: 120px;
+    margin-top: 10px;
+    opacity: 0.8;
+}
+
+.footerLinks {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+.footerLinks li {
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+.footerLinks a {
+    color: #bdc3c7; /* Mismo color que el texto base del footer */
+    text-decoration: none;
+    transition: color 0.2s ease, padding-left 0.2s ease;
+    text-decoration: none;
+}
+
+.footerLinks a:hover {
+    color: #ffffff; /* Blanco al pasar el ratón */
+    padding-left: 5px; /* Pequeño efecto de indentación */
+    text-decoration: none;
+}
+
+.socialIcons {
+    margin-top: 15px;
+    display: flex;
+    gap: 15px; /* Espacio entre iconos */
+    text-decoration: none;
+}
+
+.socialIcons a {
+    color: #bdc3c7;
+    font-size: 1.5rem; /* Tamaño de los iconos */
+    transition: color 0.2s ease, transform 0.2s ease;
+    display: inline-block; /* Para transformaciones */
+    text-decoration: none;
+}
+
+.socialIcons a:hover {
+    color: #007bff; /* Color primario al pasar el ratón */
+    transform: translateY(-2px); /* Efecto de elevación */
+    text-decoration: none;
+}
+
+.footerBottom {
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 30px;
+    border-top: 1px solid #3e5062; /* Un separador más oscuro */
+    font-size: 0.85rem;
+    color: #95a5a6; /* Texto aún más claro para el copyright */
+    text-decoration: none;
+}
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+    .footerGrid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Columnas más pequeñas en móviles */
+        text-align: center; /* Centrar texto en móviles */
+    }
+    .footerHeading::after {
+        left: 50%; /* Centrar la línea debajo del encabezado */
+        transform: translateX(-50%);
+    }
+    .socialIcons {
+        justify-content: center; /* Centrar iconos sociales */
+    }
+}
+
+@media (max-width: 480px) {
+    .footerGrid {
+        grid-template-columns: 1fr; /* Una columna en pantallas muy pequeñas */
+    }
+    .footerHeading {
+        font-size: 1.1rem;
+    }
+}

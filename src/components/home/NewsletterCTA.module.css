@@ -1,0 +1,66 @@
+.ctaSection {
+    padding: 4rem 2rem;
+    background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+    color: #2e2e2e;
+    text-align: center;
+    border-radius: 20px;
+    margin: 3rem auto;
+    max-width: 900px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  .ctaContent {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .ctaTitle {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+  }
+  
+  .ctaText {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+  }
+  
+  .input {
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+  }
+  
+  .ctaButton {
+    background-color: #007bff;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .ctaButton:hover {
+    background-image: linear-gradient(to right, #4f46e5, #2563eb);
+  }
+  
+  .successMessage {
+    font-size: 1.1rem;
+    color: green;
+    font-weight: bold;
+  }
+  

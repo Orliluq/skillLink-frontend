@@ -1,0 +1,138 @@
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem;
+    font-family: 'Inter', sans-serif;
+    color: #1f2937;
+  }
+  
+  .pageTitle {
+    text-align: center;
+  font-size: 2.75rem;
+  font-weight: 800;
+  background: linear-gradient(to right, #6366f1, #3b82f6);
+  -webkit-background-clip: text;
+  color: transparent;
+  margin-bottom: 2.5rem;
+  }
+  
+  .intro {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #4b5563;
+    margin-bottom: 2.5rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .badgesGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+  }
+  
+  .card {
+    background-color: #f9fafb;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  }
+  
+  .icon {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+  
+  .title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    color: #111827;
+  }
+  
+  .description {
+    text-align: center;
+    font-size: 1rem;
+    color: #374151;
+    margin-bottom: 0.75rem;
+  }
+  
+  .points {
+    text-align: center;
+    font-weight: 600;
+    color: #10b981;
+    font-size: 1rem;
+  }
+  
+  .condition {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #6b7280;
+  }
+  
+  /* Términos y condiciones */
+  .termsSection {
+    background-color: #f3f4f6;
+    padding: 2rem;
+    border-radius: 1rem;
+  }
+  
+  .termsTitle {
+    text-align: center;
+  font-size: 2.75rem;
+  font-weight: 800;
+  background: linear-gradient(to right, #6366f1, #3b82f6);
+  -webkit-background-clip: text;
+  color: transparent;
+  margin-bottom: 2.5rem;
+  }
+  
+  .termsList {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    color: #4b5563;
+    margin-bottom: 1rem;
+  }
+  
+  .termsList li {
+    margin-bottom: 0.75rem;
+    line-height: 1.6;
+  }
+  
+  .motivation {
+    text-align: center;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #4f46e5;
+    margin-top: 1.5rem;
+  }
+  
+  /* Responsive */
+  @media (max-width: 480px) {
+    .pageTitle {
+      font-size: 2rem;
+    }
+  
+    .intro {
+      font-size: 1rem;
+    }
+  
+    .termsSection {
+      padding: 1.5rem 1rem;
+    }
+  
+    .termsTitle {
+      font-size: 1.5rem;
+    }
+  }
+  
