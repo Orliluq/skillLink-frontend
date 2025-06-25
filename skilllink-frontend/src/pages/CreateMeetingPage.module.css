@@ -1,0 +1,149 @@
+/* Contenedor principal del formulario de reuniones */
+.meetingContainer {
+  max-width: 640px;
+  margin: 2rem auto;
+  padding: 2.5rem;
+  background: #ffffff;
+  border-radius: 1.25rem;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  font-family: 'Inter', sans-serif;
+  transition: 0.3s ease-in-out;
+}
+
+/* Título de la sección de reuniones */
+.meetingFormTitle {
+  text-align: center;
+  font-size: 2.75rem;
+  font-weight: 800;
+  background: linear-gradient(to right, #6366f1, #3b82f6);
+  -webkit-background-clip: text;
+  color: transparent;
+  margin-bottom: 2.5rem;
+}
+
+/* Formulario */
+.meetingForm {
+  background: #fff;
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Grupo de campos */
+.meetingFormGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Etiqueta del input */
+.meetingLabel {
+  margin-bottom: 6px;
+  font-weight: 500;
+  color: #444;
+}
+
+/* Campos de entrada de texto */
+.meetingInput {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  color: #333;
+  transition: border-color 0.2s ease;
+}
+
+.meetingInput:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+/* Textarea */
+.meetingTextarea {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  color: #333;
+  transition: border-color 0.2s ease;
+  resize: vertical;
+  min-height: 100px;
+}
+
+.meetingTextarea:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+/* Select */
+.meetingSelect {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  color: #333;
+  background: #fff;
+  transition: border-color 0.2s ease;
+}
+
+.meetingSelect:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+/* Error */
+.meetingError {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: -8px;
+}
+
+/* Botón de envío */
+.meetingSubmitButton {
+  margin-top: 1rem;
+  text-decoration: none;
+  background-image: linear-gradient(to right, #6366f1, #3b82f6);
+  color: #fff;
+  padding: 0.6rem 1rem;
+  border-radius: 9999px;
+  font-weight: 500;
+  font-size: 0.95rem;
+  text-align: center;
+  transition: background 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+  border: none;
+}
+
+.meetingSubmitButton:disabled {
+  background-image: linear-gradient(to right, #4f46e5, #2563eb);
+  transform: scale(1.05);
+}
+
+.meetingSubmitButton:not(:disabled):hover {
+  background-image: linear-gradient(to right, #4f46e5, #2563eb);
+  transform: translateY(-1px);
+}
+
+/* Mensaje auxiliar */
+.meetingMessage {
+  color: #666;
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .meetingContainer {
+    padding: 16px;
+  }
+
+  .meetingForm {
+    padding: 16px;
+  }
+
+  .meetingSubmitButton {
+    width: 100%;
+    text-align: center;
+  }
+}

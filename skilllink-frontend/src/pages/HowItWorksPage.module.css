@@ -1,0 +1,130 @@
+/* src/pages/HowItWorksPage.module.css */
+.pageContainer {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 30px 20px;
+    font-family: 'Inter', sans-serif;
+}
+
+.pageHeader {
+    text-align: center;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.pageHeader h1 {
+    text-align: center;
+    font-size: 2.75rem;
+    font-weight: 800;
+    background: linear-gradient(to right, #6366f1, #3b82f6);
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 2rem;
+}   
+
+.pageHeader p {
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
+    color: #5a6268;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.stepsSection {
+    margin-bottom: 60px;
+}
+
+.stepsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 35px;
+}
+
+.stepCard {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.07);
+    text-align: center; /* Centrar contenido de la tarjeta */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #f0f0f0;
+}
+
+.stepCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+.stepIconWrapper {
+    background-color: #007bff; /* Color primario */
+    color: white;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 25px auto;
+    font-size: 2rem; /* Tamaño del icono o placeholder */
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3);
+}
+
+.stepIconPlaceholder { /* Si no usas react-icons */
+    font-weight: bold;
+}
+
+.stepTitle {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #343a40;
+    margin-bottom: 15px;
+}
+
+.stepDescription {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.7;
+}
+
+.ctaSection {
+    background-color: #f8f9fa;
+    padding: 50px 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+.ctaSection h2 {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.ctaSection p {
+    color: #5a6268;
+    margin-bottom: 25px;
+    font-size: 1.1rem;
+}
+
+.ctaButton {
+    display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  transition: background 0.3s ease, transform 0.2s ease;
+  margin-top: auto;
+  padding: 0.85rem 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 0.75rem;
+    border: none;
+    background: linear-gradient(to right, #6366f1, #3b82f6);
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 4px 14px rgba(99, 102, 241, 0.4);
+}
+
+.ctaButton:hover {
+    background: linear-gradient(to right, #4338ca, #2563eb);
+    transform: translateY(-2px);
+}

@@ -1,0 +1,91 @@
+.meetingsContainer {
+  max-width: 960px;
+  margin: 2rem auto;
+  padding: 1rem;
+  font-family: 'Inter', sans-serif;
+}
+
+.title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 2rem;
+  background: linear-gradient(to right, #4f46e5, #3b82f6);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.meetingList {
+  display: grid;
+  gap: 1.5rem;
+}
+
+/* Tarjeta individual */
+.meetingCard {
+  background: #ffffff;
+  border-radius: 1rem;
+  padding: 1.8rem;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: 1px solid #f1f5f9;
+}
+
+.meetingCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Título de la reunión */
+.meetingTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 0.8rem;
+}
+
+/* Detalles de la reunión */
+.meetingDetail {
+  font-size: 0.95rem;
+  color: #4b5563;
+  margin: 0.25rem 0;
+}
+
+/* Botón de enlace estilizado */
+.meetingButton {
+  margin-top: 1.25rem;
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #fff;
+  background: linear-gradient(to right, #4f46e5, #3b82f6);
+  border: none;
+  border-radius: 9999px;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.meetingButton:hover {
+  background: linear-gradient(to right, #4338ca, #2563eb);
+  transform: translateY(-2px);
+}
+
+.profileButton {
+  margin-top: 1.25rem;
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  font-size: 0.95rem;
+  margin-left: 1rem;
+  font-weight: 500;
+  color: #fff;
+  background: linear-gradient(to right, #4f46e5, #3b82f6);
+  border: none;
+  border-radius: 9999px;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.profileButton:hover {
+  background: linear-gradient(to right, #4338ca, #2563eb);
+  transform: translateY(-2px);
+}

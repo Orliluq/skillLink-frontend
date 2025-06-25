@@ -1,0 +1,128 @@
+/* src/components/home/Testimonials.module.css */
+.testimonialsSection {
+    background-color: #f8f9fa;
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.sectionContainer {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.sectionTitle {
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: #343a40;
+    margin-bottom: 50px;
+    position: relative;
+    display: inline-block;
+}
+
+.sectionTitle::after {
+    content: '';
+    display: block;
+    width: 70px;
+    height: 3px;
+    background-color: #007bff;
+    margin: 10px auto 0;
+}
+
+.testimonialSwiper {
+    padding-bottom: 50px !important; /* Espacio para la paginación */
+    /* Para asegurar que los slides tengan la misma altura si Swiper no lo hace por defecto */
+    /* --swiper-height: auto; /* o un valor fijo si prefieres */
+    /* display: flex; /* Puede ayudar a que los slides se estiren */
+}
+
+/* Asegura que cada SwiperSlide (el contenedor directo del card) ocupe toda la altura disponible si Swiper lo permite */
+:global(.swiper-slide) {
+  height: auto !important; /* Permite que la tarjeta defina la altura */
+  display: flex !important; /* Para alinear la tarjeta dentro del slide si este es más grande */
+}
+
+.testimonialCard {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+    text-align: center;
+    
+    /* --- CLAVE PARA ALTURA IGUAL --- */
+    display: flex !important; /* Usar flexbox para el contenido interno */
+    flex-direction: column;   /* Apilar elementos verticalmente */
+    justify-content: space-between; /* Distribuye el espacio, empujando authorInfo hacia abajo */
+    height: 100%; /* Intenta ocupar toda la altura del contenedor del slide */
+    /* O una altura fija si lo prefieres, pero puede cortar contenido: */
+    /* min-height: 350px; */ /* Una altura mínima para consistencia */
+    /* max-height: 350px; */
+    /* height: 350px; */    /* Si quieres una altura fija exacta */
+    /* --- FIN DE CLAVE PARA ALTURA IGUAL --- */
+
+    box-sizing: border-box;
+    margin-bottom: 10px; /* Espacio si la paginación está muy cerca */
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.testimonialCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+
+.authorAvatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 3px solid #007bff;
+    flex-shrink: 0; /* Evita que el avatar se encoja */
+}
+
+.quote {
+    font-size: 1rem; /* O 0.95rem si el texto es muy largo */
+    font-style: italic;
+    color: #555;
+    line-height: 1.6; /* Ajusta para mejor legibilidad */
+    margin-bottom: 20px;
+    flex-grow: 1; /* Permite que la cita ocupe el espacio vertical disponible */
+    /* Opcional: para truncar texto si es muy largo (requiere JS o más CSS) */
+    /* overflow: hidden; */
+    /* text-overflow: ellipsis; */
+    /* display: -webkit-box; */
+    /* -webkit-line-clamp: 5; */ /* Número de líneas a mostrar */
+    /* -webkit-box-orient: vertical; */
+}
+
+.authorInfo {
+    /* margin-top: auto;  No es necesario si justify-content: space-between está en .testimonialCard */
+    flex-shrink: 0; /* Evita que esta sección se encoja */
+    padding-top: 15px; /* Espacio antes del nombre del autor */
+    border-top: 1px dashed #eee; /* Separador sutil */
+    width: 100%; /* Para que el borde ocupe todo el ancho */
+}
+
+.authorName {
+    display: block;
+    font-weight: 600;
+    color: #333;
+    font-size: 1.1rem;
+    margin-bottom: 3px;
+}
+
+.authorRole {
+    display: block;
+    font-size: 0.9rem;
+    color: #777;
+}
+
+/* Estilos para la paginación de Swiper */
+:global(.swiper-pagination-bullet) {
+    background-color: #007bff !important;
+    opacity: 0.5;
+}
+
+:global(.swiper-pagination-bullet-active) {
+    opacity: 1;
+}
