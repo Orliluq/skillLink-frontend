@@ -4,6 +4,18 @@
 La plataforma donde el talento se conecta, crece y colabora.  
 Mentorías, proyectos, desafíos y mucho más para tu desarrollo profesional. 🌱✨
 
+## 👩‍🏫 Aquí puedes:
+- 💬 Participar en foros y ayudar a otros con tus ideas
+- 🛠️ Crear y mostrar tus proyectos con orgullo
+- 🧠 Ser mentor o mentora y guiar a nuevas mentes brillantes
+- 📚 Diseñar y completar cursos que impulsan tu crecimiento
+- 🏆 Superar desafíos y ganar experiencia (¡y puntos!)
+- 🎖️ ¡Ganar badges por cada acción que enriquece a la comunidad!
+- 🌍 En SkillLink, cada colaboración suma. Cada línea de código, cada palabra de aliento y cada proyecto compartido ayudan a construir un espacio donde todos brillan.
+
+### 🧭 Nuestra brújula:
+"Conectar talentos, encender ideas y crecer juntos."
+🙌 ¿Listo para dejar huella en la comunidad? ¡Bienvenido a SkillLink!
 ---
 
 ## 📚 Tabla de Contenidos
