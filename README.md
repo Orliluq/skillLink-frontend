@@ -1,42 +1,46 @@
-# SkillLink
+# 🚀 SkillLink
 
-SkillLink es una plataforma web para conectar profesionales y estudiantes, facilitando mentorías, colaboración en proyectos y desarrollo de habilidades.
+¡Bienvenido a **SkillLink**!  
+La plataforma donde el talento se conecta, crece y colabora.  
+Mentorías, proyectos, desafíos y mucho más para tu desarrollo profesional. 🌱✨
 
 ---
 
-## Tabla de Contenidos
+## 📚 Tabla de Contenidos
 
-- [SkillLink](#skilllink)
-  - [Tabla de Contenidos](#tabla-de-contenidos)
-  - [Descripción General](#descripción-general)
-  - [Estructura del Proyecto](#estructura-del-proyecto)
-  - [Requisitos Previos](#requisitos-previos)
-  - [Clonado y Configuración](#clonado-y-configuración)
-    - [Variables de Entorno](#variables-de-entorno)
-  - [Backend (Spring Boot)](#backend-spring-boot)
-    - [Instalación y Ejecución](#instalación-y-ejecución)
-    - [Estructura Clave](#estructura-clave)
-  - [Frontend (React + Vite)](#frontend-react--vite)
-    - [Instalación y Ejecución](#instalación-y-ejecución-1)
-    - [Estructura Clave](#estructura-clave-1)
-  - [Licencia](#licencia)
+- [🚀 SkillLink](#-skilllink)
+  - [📚 Tabla de Contenidos](#-tabla-de-contenidos)
+  - [🌟 Descripción General](#-descripción-general)
+  - [🗂️ Estructura del Proyecto](#️-estructura-del-proyecto)
+  - [🔧 Requisitos Previos](#-requisitos-previos)
+  - [📥 Clonado y Configuración](#-clonado-y-configuración)
+    - [🔑 Variables de Entorno](#-variables-de-entorno)
+  - [🛠️ Backend (Spring Boot)](#️-backend-spring-boot)
+    - [⚡ Instalación y Ejecución](#-instalación-y-ejecución)
+    - [📦 Estructura Clave](#-estructura-clave)
+  - [💻 Frontend (React + Vite)](#-frontend-react--vite)
+    - [⚡ Instalación y Ejecución](#-instalación-y-ejecución-1)
+    - [📦 Estructura Clave](#-estructura-clave-1)
+  - [📝 Licencia](#-licencia)
   - [🗺️ Diagrama ERD Interactivo](#️-diagrama-erd-interactivo)
 
 ---
 
-## Descripción General
+## 🌟 Descripción General
 
-SkillLink es una plataforma fullstack compuesta por un backend en Java Spring Boot y un frontend en React + TypeScript (Vite). Permite a los usuarios:
+SkillLink es una plataforma **fullstack** (Java Spring Boot + React + TypeScript) que te permite:
 
-- Registrarse e iniciar sesión
-- Crear y explorar proyectos colaborativos
-- Buscar y ofrecer mentorías
-- Participar en desafíos y foros
-- Gestionar perfiles, habilidades y experiencias
+- 📝 Registrarte e iniciar sesión
+- 🤝 Crear y explorar proyectos colaborativos
+- 🧑‍🏫 Buscar y ofrecer mentorías
+- 🏆 Participar en desafíos y foros
+- 🧑‍💻 Gestionar tu perfil, habilidades y experiencias
+
+¡Únete y potencia tu carrera junto a una comunidad vibrante! 🚀
 
 ---
 
-## Estructura del Proyecto
+## 🗂️ Estructura del Proyecto
 
 ```
 SkillLink Project/
@@ -70,32 +74,33 @@ SkillLink Project/
 
 ---
 
-## Requisitos Previos
+## 🔧 Requisitos Previos
 
 - **Node.js** >= 18.x
 - **npm** >= 9.x
 - **Java** >= 17
 - **Maven** (wrapper incluido)
-- **PostgreSQL** (o tu base de datos configurada)
+- **PostgreSQL** (o tu base de datos favorita)
 
 ---
 
-## Clonado y Configuración
+## 📥 Clonado y Configuración
 
 ```bash
 git clone https://github.com/Orliluq/skillLink.git
 cd skillLink
 ```
 
-### Variables de Entorno
+### 🔑 Variables de Entorno
 
-Configura tus variables de entorno para backend y frontend según corresponda (por ejemplo, `.env` para frontend, `application.properties` para backend).
+- Backend: configura `src/main/resources/application.properties`
+- Frontend: crea `.env` si necesitas personalizar endpoints
 
 ---
 
-## Backend (Spring Boot)
+## 🛠️ Backend (Spring Boot)
 
-### Instalación y Ejecución
+### ⚡ Instalación y Ejecución
 
 ```bash
 cd backend/backend
@@ -103,10 +108,9 @@ cd backend/backend
 ./mvnw spring-boot:run
 ```
 
-- El backend corre por defecto en `http://localhost:8080`
-- Configura tu base de datos en `src/main/resources/application.properties`
+- Accede a la API en: [http://localhost:8080](http://localhost:8080)
 
-### Estructura Clave
+### 📦 Estructura Clave
 
 - `controller/` — Controladores REST
 - `service/` — Lógica de negocio
@@ -116,9 +120,9 @@ cd backend/backend
 
 ---
 
-## Frontend (React + Vite)
+## 💻 Frontend (React + Vite)
 
-### Instalación y Ejecución
+### ⚡ Instalación y Ejecución
 
 ```bash
 cd skilllink-frontend
@@ -126,10 +130,9 @@ npm install
 npm run dev
 ```
 
-- El frontend corre por defecto en `http://localhost:5173`
-- Configura endpoints en `src/services/api.ts` si es necesario
+- Accede a la app en: [http://localhost:5173](http://localhost:5173)
 
-### Estructura Clave
+### 📦 Estructura Clave
 
 - `components/` — Componentes reutilizables
 - `pages/` — Vistas principales
@@ -138,9 +141,35 @@ npm run dev
 
 ---
 
-## Licencia
+## 📝 Licencia
 
 MIT License
+
+```
+MIT License
+
+Copyright (c) 2024 Orli Dun
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
+
+---
 
 ## 🗺️ Diagrama ERD Interactivo
 
@@ -215,6 +244,8 @@ erDiagram
     PROJECT }o--|| USER : "owner"
 ```
 
-Puedes copiar este bloque y pegarlo en [https://mermaid.live/](https://mermaid.live/) o [dbdiagram.io](https://dbdiagram.io) para interactuar y modificar el diagrama.
-
 ---
+
+> ¿Dudas, sugerencias o quieres contribuir?  
+> ¡Abre un issue, un pull request o escríbenos!  
+> ¡Gracias por ser parte de la comunidad SkillLink! 💙🚀
