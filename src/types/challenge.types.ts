@@ -1,4 +1,3 @@
-// src/types/challenge.types.ts
 import type { UserSummaryDTO } from "./user.types";
 
 export const ChallengeDifficulty = {

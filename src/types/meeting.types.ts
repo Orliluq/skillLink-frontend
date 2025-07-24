@@ -1,4 +1,3 @@
-// src/types/meeting.types.ts
 import type { UserSummaryDTO } from "./user.types";
 
 export const MeetingRelatedEntityType = {

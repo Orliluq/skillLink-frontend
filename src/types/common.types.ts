@@ -1,6 +1,3 @@
-// src/types/common.types.ts
-
-// Para respuestas paginadas del backend
 export interface Page<T> {
   content: T[];
   pageable: {

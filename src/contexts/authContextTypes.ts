@@ -1,4 +1,3 @@
-// src/contexts/authContextTypes.ts
 import type { UserDTO, AuthRequest, AuthResponse, UserRegistrationRequest } from '../types/user.types';
 import type { ReactNode } from 'react';
 

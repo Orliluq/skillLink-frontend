@@ -1,6 +1,5 @@
-/* src/components/home/CallToAction.module.css */
 .ctaSection {
-    background: linear-gradient(135deg, #0056b3 0%, #007bff 100%); /* Gradiente azul oscuro a claro */
+    background: linear-gradient(135deg, #0056b3 0%, #007bff 100%); 
     color: white;
     padding: 80px 20px;
     text-align: center;
@@ -29,8 +28,8 @@
 }
 
 .ctaButton {
-    background-color: #ffc107; /* Amarillo brillante, como en el hero */
-    color: #2c3e50; /* Texto oscuro para contraste */
+    background-color: #ffc107; 
+    color: #2c3e50; 
     padding: 15px 40px;
     text-decoration: none;
     font-size: 1.15rem;
@@ -39,11 +38,11 @@
     transition: transform 0.2s ease-out, background-color 0.2s ease, box-shadow 0.2s ease;
     box-shadow: 0 4px 15px rgba(0,0,0,0.2);
     border: none;
-    display: inline-block; /* Para aplicar transformaciones */
+    display: inline-block; 
 }
 
 .ctaButton:hover {
-    background-color: #e0a800; /* Amarillo más oscuro */
+    background-color: #e0a800; 
     transform: translateY(-3px) scale(1.03);
     box-shadow: 0 6px 20px rgba(0,0,0,0.25);
 }

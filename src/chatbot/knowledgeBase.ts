@@ -1,11 +1,9 @@
-// src/chatbot/knowledgeBase.ts
-
 export interface RouteInfo {
-    path: string;          // La ruta real en tu aplicación
-    keywords: string[];    // Palabras clave para activar esta ruta
-    description: string;   // Una breve descripción de la página
-    response: string;      // Respuesta que dará el bot o una plantilla
-    title?: string;        // Título de la página (opcional)
+    path: string;          
+    keywords: string[];    
+    description: string;   
+    response: string;      
+    title?: string;        
 }
 
 export interface FAQEntry {
@@ -105,10 +103,8 @@ export const routeKnowledgeBase: RouteInfo[] = [
         description: "Información sobre el uso de cookies en nuestra plataforma.",
         response: "Lee más sobre cómo usamos las cookies en nuestra [Política de Cookies](/cookie-policy)."
     },
-    // ... añade más rutas y FAQs
 ];
 
-// Puedes añadir una lista de FAQs más generales también
 export const faqKnowledgeBase: FAQEntry[] = [
     {
         keywords: ["qué es skilllink", "skill link", "plataforma"],
@@ -118,5 +114,4 @@ export const faqKnowledgeBase: FAQEntry[] = [
         keywords: ["contacto", "soporte", "email de contacto"],
         answer: "Puedes contactarnos a través de info@skilllink.com para cualquier consulta."
     }
-    // ... más FAQs ...
 ];

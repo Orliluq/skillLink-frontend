@@ -9,5 +9,3 @@ export * from './challenge.types';
 export * from './chat.types';
 /* export * from './blog.types'; */
 /* export * from './auth.types'; */
-
-

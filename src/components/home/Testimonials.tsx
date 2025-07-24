@@ -1,19 +1,16 @@
-// src/components/home/Testimonials.tsx
 import React from 'react';
 import styles from './Testimonials.module.css';
-// Opcional: Swiper para un carrusel de testimonios
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
-// import 'swiper/css/autoplay'; // A veces el bundle ya lo incluye
 
 interface Testimonial {
     id: number;
     quote: string;
     author: string;
     role: string;
-    avatarUrl?: string; // Opcional
+    avatarUrl?: string;
 }
 
 const testimonialsData: Testimonial[] = [

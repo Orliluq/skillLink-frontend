@@ -1,4 +1,3 @@
-// src/data/blogPosts.ts (o similar)
 export interface BlogPostPreview {
     id: string; // O number
     slug: string; // Para la URL amigable
@@ -52,7 +51,6 @@ export const blogPostsData: BlogPostPreview[] = [
     // Añade más posts
 ];
 
-// Simulación de obtener un post completo por slug (en una app real, esto sería una llamada API)
 export const getBlogPostBySlug = (slug: string): BlogPost | undefined => {
     const preview = blogPostsData.find(post => post.slug === slug);
     if (preview) {

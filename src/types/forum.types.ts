@@ -1,4 +1,3 @@
-// src/types/forum.types.ts
 import type { UserSummaryDTO } from "./user.types";
 
 export type ForumRelatedEntityType =

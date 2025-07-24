@@ -1,4 +1,3 @@
-/* Para un layout de footer pegajoso (sticky footer) */
 .app-container {
   display: flex;
   flex-direction: column;

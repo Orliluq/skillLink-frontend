@@ -1,4 +1,3 @@
-// src/components/chatbot/Chatbot.tsx
 import React, { useState, useRef, useEffect } from 'react';
 import styles from './Chatbot.module.css';
 import { routeKnowledgeBase, faqKnowledgeBase, /* type RouteInfo */ } from '../../chatbot/knowledgeBase';

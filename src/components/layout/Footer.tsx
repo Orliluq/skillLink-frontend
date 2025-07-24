@@ -1,8 +1,6 @@
-// src/components/layout/Footer.tsx
 import React from 'react';
-import { Link } from 'react-router-dom'; // Si tienes rutas internas para estas páginas
+import { Link } from 'react-router-dom';
 import styles from './Footer.module.css';
-// Asume que tienes algunos iconos SVG o una librería de iconos (ej. react-icons)
 import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram } from 'react-icons/fa';
 
 const Footer: React.FC = () => {

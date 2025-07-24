@@ -19,7 +19,10 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test-backend": "node test-backend.cjs",
+    "test-connection": "node test-backend.cjs",
+    "dev-with-test": "npm run test-backend && npm run dev"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",

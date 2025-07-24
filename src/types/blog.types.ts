@@ -1,5 +1,3 @@
-// src/types/blog.types.ts
-
 import type { UserSummaryDTO } from './index';
 
 /**

@@ -1,4 +1,3 @@
-// src/components/home/PartnersSlider.tsx
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Grid } from 'swiper/modules'; // Grid para múltiples logos por slide si son pequeños

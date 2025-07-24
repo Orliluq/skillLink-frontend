@@ -1,8 +1,5 @@
-// src/components/home/StatsSection.tsx
 import React, { useEffect, useState, useRef } from 'react';
 import styles from './StatsSection.module.css';
-// Opcional: un hook para detectar si el elemento está visible para animar los números
-// import { useInView } from 'react-intersection-observer'; 
 
 interface StatItem {
     id: string;
