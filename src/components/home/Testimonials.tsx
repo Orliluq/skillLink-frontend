@@ -2,8 +2,7 @@ import React from 'react';
 import styles from './Testimonials.module.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Autoplay } from 'swiper/modules';
-import 'swiper/css';
-import 'swiper/css/pagination';
+/* import 'swiper/css'; */
 
 interface Testimonial {
     id: number;

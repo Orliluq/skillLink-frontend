@@ -1,8 +1,7 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Grid } from 'swiper/modules'; // Grid para múltiples logos por slide si son pequeños
-import 'swiper/css';
-import 'swiper/css/grid'; // Si usas el módulo Grid
+/* import 'swiper/css'; */
 
 import styles from './PartnersSlider.module.css';
 

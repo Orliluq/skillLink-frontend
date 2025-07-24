@@ -7,7 +7,7 @@ import { ProjectStatus } from '../types/project.types'; // Asegúrate de tener e
 const ProfilePage: React.FC = () => {
   const [profileData, setProfileData] = useState<any | null>(null);
   const [isLoading, setIsLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
+  const [error, /* setError */] = useState<string | null>(null);
 
   useEffect(() => {
     setTimeout(() => {

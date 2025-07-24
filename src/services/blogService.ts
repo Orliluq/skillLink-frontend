@@ -1,4 +1,4 @@
-// src/services/blogService.ts
+/* // src/services/blogService.ts
 import apiClient from './api';
 import type {
   BlogPostDTO,
@@ -47,7 +47,7 @@ export const updateBlogPost = async (
 export const deleteBlogPost = async (postId: number): Promise<void> => {
   await apiClient.delete(`/blog/posts/${postId}`);
 };
-
+ */
 // Opcional: obtener comentarios de un post
 // export const getCommentsByPost = async (postId: number): Promise<CommentDTO[]> => {
 //   const response = await apiClient.get<CommentDTO[]>(`/blog/posts/${postId}/comments`);

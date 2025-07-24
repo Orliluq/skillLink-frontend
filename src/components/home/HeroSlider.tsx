@@ -1,11 +1,7 @@
 import React from 'react';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import 'swiper/css/effect-fade';
+/* import 'swiper/css'; */
 import styles from './HeroSlider.module.css';
 
 // 4. Import required Swiper modules

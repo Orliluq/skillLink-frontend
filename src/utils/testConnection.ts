@@ -131,7 +131,7 @@ export const logConnectionResults = (results: {[key: string]: ConnectionTestResu
   console.log('\n📊 RESULTADOS DE CONECTIVIDAD:');
   console.log('=' .repeat(50));
   
-  Object.entries(results).forEach(([name, result]) => {
+  Object.entries(results).forEach(([/* name */, result]) => {
     console.log(`${result.message}`);
     if (result.details) {
       console.log(`   Detalles:`, result.details);
